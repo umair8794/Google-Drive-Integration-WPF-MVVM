@@ -108,7 +108,9 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="ViewModels\AppWindowVM.cs" />
+    <Compile Include="ViewModels\Classes\AppWindowVM.cs" />
+    <Compile Include="ViewModels\Classes\Base\ObservableObject.cs" />
+    <Compile Include="ViewModels\Helpers\GoogleDriveHelper.cs" />
     <Compile Include="Views\AppWindow.xaml.cs">
       <DependentUpon>AppWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -147,8 +149,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Models\" />
-    <Folder Include="ViewModels\Classes\" />
-    <Folder Include="ViewModels\Helpers\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

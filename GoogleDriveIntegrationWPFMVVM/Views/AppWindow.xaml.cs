@@ -8,29 +8,9 @@ namespace GoogleDriveIntegrationWPFMVVM.Views
     /// </summary>
     public partial class AppWindow : Window
     {
-        // Data members
-        private static AppWindow _Instance;
-
-        // Public properties
-        public static AppWindow Instance
-        {
-            get
-            {
-                if (_Instance == null)
-                    _Instance = new AppWindow();
-
-                return _Instance;
-            }
-        }
-
-        private AppWindow()
+        public AppWindow()
         {
             InitializeComponent();
-        }
-
-        private void Window_Loaded(object sender, RoutedEventArgs e)
-        {
-            DataContext = AppWindowVM.Instance;
         }
     }
 }
